@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0c1f14;
+    color: #e8eee9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Background grid pattern matching the image */
+.bg-forest-grid {
+  background-color: #0c1f14;
+  background-image: 
+    linear-gradient(to right, rgba(216, 175, 84, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(216, 175, 84, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Custom scrollbar for dark forest theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08160d;
+}
+::-webkit-scrollbar-thumb {
+  background: #183d27;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #235437;
+}
